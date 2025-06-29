@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Особое сообщение</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #4a5568;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .message {
+            color: #2d3748;
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .message p {
+            margin-bottom: 20px;
+        }
+
+        .heart {
+            font-size: 3em;
+            color: #e53e3e;
+            animation: heartbeat 2s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-style: italic;
+            color: #718096;
+            font-size: 1.1em;
+        }
+
+        .ps {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #a0aec0;
+            font-style: italic;
+            text-align: right;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .message {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>💙 Для вас 💙</h1>
+        
+        <div class="message">
+            <p><strong>Спасибо вам за всё!</strong></p>
+            
+            <p>Спасибо за то что вы есть, вы единственная опора и поддержка для меня, вы лучшие, вы невероятные, я бы без вас не справился.</p>
+            
+            <p>Каждая секунда сколько мы провели вместе - останется со мной навсегда!</p>
+            
+            <p><strong>Я вас люблю!</strong></p>
+        </div>
+        
+        <div class="heart">❤️</div>
+        
+        <div class="signature">
+            С искренней благодарностью и невероятным уважением!
+        </div>
+        
+        <div class="ps">
+           С любовью - Марк :)
+        </div>
+    </div>
+</body>
+</html>
